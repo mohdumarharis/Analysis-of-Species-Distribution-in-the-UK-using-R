@@ -63,3 +63,93 @@ variable of ecological status with species which
 shows that removing the data of other four
 species have resulted in significant changes
 in the value of new ecological status.
+
+## Hypothesis Tests
+To perform two distinct types of hypothesis tests, we need to formulate two hypotheses and
+choose appropriate statistical tests.
+1. Here is the First TestHypothesis 1: There is a significant difference in mean ecological status between the two
+periods (Y70 vs Y00 ).
+Null Hypothesis: There is no significant difference in mean ecological status between the two
+periods.
+Alternative Hypothesis: There is a significant difference in mean ecological status between
+the two periods.
+Statistical Test: Two-sample t-test for independent samples.
+The first hypothesis test is a two-sample t-test that compares the mean ecological status of the
+species between two different periods: P70-P00 and P00-P13. The null hypothesis is that
+there is no significant difference in the mean ecological status between the two periods, while
+the alternative hypothesis is that there is a significant difference in the mean ecological status
+between the two periods.
+The result of the t-test shows that the t-value is 9.6309 with 5278 degrees of freedom, and the
+p-value is less than 2.2e-16, which is extremely small. This means that we can reject the null
+hypothesis and conclude that there is a significant difference in the mean ecological status
+between the two periods. The sample means of ecological status for period1 and period2 are
+0.7174392 and 0.6866247, respectively.
+The 95 percent confidence interval for the difference in means between the two periods is
+[0.02454204, 0.03708694]. This indicates that the mean ecological status in the later period
+(P00-P13) is lower than that in the earlier period (P70-P00) by an amount ranging from
+0.02454204 to 0.03708694.
+This result suggests that there has been a significant decline in the ecological status of the
+species between the two periods, indicating a potential decrease in the population of the
+species. It could be due to a variety of factors such as habitat loss, climate change, pollution,
+and other anthropogenic activities. Further investigation is required to determine the exact
+cause of this decline and to develop appropriate conservation measures to prevent further
+decline in the population of these species.
+
+2. Here is the Second TestHypothesis test for correlation between two variables:
+Null hypothesis: There is no correlation between the number of bees and the number of bird
+species.
+Alternative hypothesis: There is a correlation between the number of bees and the number of
+bird species.
+ResultThe Pearson's correlation test result shows that there is a significant positive correlation
+(correlation coefficient, r = 0.3759451) between the population of bees and birds in the given
+dataset. The p-value obtained is less than the significance level of 0.05, which indicates that
+the correlation is statistically significant, and we reject the null hypothesis that the true
+correlation is equal to zero.
+P value is less than 2.2e-16.
+The 95% confidence interval (0.3525459, 0.3988744) suggests that we can be 95% confident
+that the true correlation between bees and birds population in the population lies within this
+interval.
+These insights suggest that the population of bees and birds might be positively associated,
+meaning that an increase in the population of bees may lead to an increase in the population
+of birds. This information can be useful for conservation efforts, as increasing the population
+of bees can have a positive impact on the population of birds and other species that depend on
+them.
+Section III
+Simple Linear Regression
+Applying linear regression on BD7 and BD11.
+Results-
+• The regression equation is given by:
+BD11 = 0.090938 + 0.889447*BD7
+Green Line is Regression line
+
+• The intercept of 0.090938 is the expected value of BD11 when BD7 is equal to zero.
+The coefficient of 0.889447 indicates that for every unit increase in BD7, BD11 is
+expected to increase by 0.889447 units.
+• The p-value of the F-statistic is less than 2.2e-16, which is highly significant. This
+indicates that the model as a whole is significant and the predictor variable BD7 has a
+strong relationship with the response variable BD11.
+• The multiple R-squared value of 0.9315 indicates that the model explains 93.15% of
+the variation in BD11, while the adjusted R-squared value is the same as the multiple
+R-squared value because there is only one predictor variable.
+• The residual standard error of 0.02828 indicates that the model has a good fit to the
+data, and the residuals have a mean of zero and constant variance.
+In conclusion, the model suggests a strong positive relationship between BD11 and BD7,
+indicating that the ecological status of the selected 7 species has a strong association with the
+ecological status of all 11 species.
+Then we apply regression on the ecological status data separated by periods ,
+
+The results show the regression analysis of the relationship between BD7 and BD11 for two
+different time periods - Y00 and Y70.
+For the Y00 period, the intercept and coefficient estimates are 0.109660 and 0.872912,
+respectively. The coefficient is statistically significant with a very low p-value of < 2.2e-16,
+indicating a strong positive linear relationship between BD7 and BD11 during this period.
+The R-squared value is 0.9348, indicating that BD7 can explain 93.48% of the variation in
+BD11 during this period.
+Similarly, for the Y70 period, the intercept and coefficient estimates are 0.053950 and
+0.930733, respectively. The coefficient is also statistically significant with a very low p-value
+of < 2.2e-16, indicating a strong positive linear relationship between BD7 and BD11 during
+this period. The R-squared value is 0.9394, indicating that BD7 can explain 93.94% of the
+variation in BD11 during this period.
+Reg No. 2205006
+Overall, the results suggest that there is a strong positive linear relationship between BD7 and
+BD11, and this relationship holds for both periods analyzed.
